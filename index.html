@@ -7,6 +7,35 @@
     <title>Poem Generator</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <h1>Poem Generator</h1>
+        <p>Coded with 💜 by Mbali, coding workshops for busy women.</p>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form class="form" id="poem-generator">
+            <input
+              type="text"
+              id="instructions"
+              placeholder="Enter the topic of the poem?"
+              required
+            />
+            <input type="submit" value="Generate Poem" class="btn" id="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Paris or Cheese</div>
+        </div>
+        <div class="poem" id="poem">
+          <span class="Typeriter__wrapper">
+            <strong></strong>
+          </span>
+          <span class="Typewritter__cursor">|</span>
+        </div>
+      </main>
+    </div>
+
     <script src="src/script.js"></script>
   </body>
 </html>
