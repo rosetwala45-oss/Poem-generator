@@ -19,13 +19,15 @@ function generatePoem(event) {
 
 // Displaying poem
 function displayPoem(response) {
-  let poemElement = document.querySelector("#poem");
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
     delay: 40,
     cursor: "|",
   });
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
 }
 
 // Loading message

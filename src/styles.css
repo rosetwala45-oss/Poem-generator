@@ -90,6 +90,10 @@ h1 {
   background-color: white;
 }
 
+.hidden {
+  display: none;
+}
+
 .poem strong {
   color: #ce55a8;
 }
