@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="src/styles.css" />
     <title>Poem Generator</title>
   </head>
@@ -10,7 +20,7 @@
     <div class="container">
       <header>
         <h1>Poem Generator</h1>
-        <p>Coded with 💜 by Mbali, coding workshops for busy women.</p>
+
         <a href="http://" target="_blank" rel="noopener noreferrer"></a>
       </header>
 
@@ -20,20 +30,32 @@
             <input
               type="text"
               id="instructions"
+              class="instructions"
               placeholder="Enter the topic of the poem?"
+              autofocus
               required
+              autocomplete="off"
             />
             <input type="submit" value="Generate Poem" class="btn" id="submit-button" />
           </form>
-          <div class="hint">i.e: Flower, Paris or Cheese</div>
+          <div class="hint">i.e: Flower, Paris or Cake</div>
         </div>
         <div class="poem" id="poem">
-          <span class="Typeriter__wrapper">
-            <strong></strong>
+          <span class="Typeriter__wrapper"
+            >SheCodes, a community strong and bright, Women learning to code, taking flight., With
+            determination and support in sight,, Together we shine, in love for tech we unite.,
+            <br />
+            <strong>SheCodes AI</strong>
           </span>
           <span class="Typewritter__cursor">|</span>
         </div>
       </main>
+
+      <footer>
+        Coded with 🩷 by <a href="" target="_blank">Mbali Twala(Rose)</a>, and is
+        <a href="http://" target="_blank">open-sourced on GitHub</a> and is
+        <a href="http://" target="_blank">hosted on Netlify</a>
+      </footer>
     </div>
 
     <script src="src/script.js"></script>
